@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="origin.css">	
+	<link rel="stylesheet" type="text/css" href="nav.css">	
+	<link rel="stylesheet" type="text/css" href="header.css">	
+	<link rel="stylesheet" type="text/css" href="main.css">	
+	<link rel="stylesheet" type="text/css" href="footer.css">
+
+	
+
+	<title>Copy Star</title>
+<style>
+* {box-sizing: border-box}
+body {
+font-family: Verdana, sans-serif;
+margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+.slideshow-container {
+width: 700px;
+height: 350px; 
+position: relative;
+margin: auto;
+}
+/* Кнопки next & previous*/
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+/* Измените положение "next button" */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+/* Добавьте черный фоновый цвет с небольшой прозрачностью*/
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+color: #ffffff;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+/* Точки/маркеры/указатели */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #999999;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+background-color: #111111;
+}
+
+/* Для маленьких экранов увеличьте размер текста */
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+	<!-- Блок-контейнер страницы -->
+	<div class="page">
+		
+		<!-- Блок навигации -->
+		<nav>
+			<!-- Блок-контейнер содержимого (физика) -->
+			<div class="container">
+				<!-- Блок-контейнер логики -->
+				<div class="container__row">
+					<!-- Блок-контейнер контента -->
+					<div class="container__content">
+						<img src="19.jpg" width="100" height="100" class="img">
+						<div class="logo">Copy Star</div>
+					</div>
+					<div class="container__content">
+						<div class="nav-toggle">
+							<span></span>
+						</div>
+						<ul class="navigation">
+							<li><a href="file:///C:/Users/Андрей/Desktop/практика/index.html#">Главная</a></li>
+							<li><a href="file:///C:/Users/Андрей/Desktop/практика/onas.html">О нас</a></li>
+							<li><a href="file:///C:/Users/Андрей/Desktop/практика/katalog.html">Каталог</a></li>
+							<li><a href="file:///C:/Users/Андрей/Desktop/практика/gdenauti.html">Где нас найти?</a></li>
+							
+						</ul>
+						<div class="block">
+								<div class="b1"><a href="" class="closing-button1"><span>Вход</span></a></div><br>
+								<div class="b2"><a href="" class="closing-button2"><span>Регистрация</span></a></div>
+							</div>
+					</div>
+					<!-- #Блок-контейнер контента -->
+				</div>
+				<!-- #Блок-контейнер логики -->
+			</div>
+			<!-- #Блок-контейнер содержимого -->
+		</nav>
+		<!-- #Блок навигации -->
+
+		<!-- Блок-шапка страницы -->
+
+
+	<div class="line"></div><br>
+
+	<div class="polosa1"></div>
+<div class="slideshow-container">
+<div class="mySlides fade">
+<img src="18.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+<img src="https://www.ecrandarret.org/wp-content/uploads/2019/12/O%C3%B9-peut-on-trouver-des-cartouches-dencre-compatibles.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+<img src="https://anzalweb.ir/wp-content/uploads/2017/12/improve-scanned-image-quality2.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+<img src="http://cdn.paralleli.if.ua/photos/13911/13911-7078922-1vidyi-mfu-dlya-domashnego-ispolzovaniya.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+<img src="https://kartustonerx.files.wordpress.com/2017/09/toner.jpg" style="width:100%">
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<br>
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+</script><br>
+<div class="line"></div><br>
+<main>
+	
+	<div class="text1"><h1>Главная</h1></div><br><br><br>
+	<div class="text2"><h3>Девиз компании:"Профессиональный сервис<br> для вашей офисной техники".</h3></div>
+	<br><div class="line"></div><br>
+	<div class="text3"><h2>Услуги компании</h2></div>
+
+	<div class="container">
+				<!-- Блок-контейнер логики -->
+				<div class="container__row">
+					<!-- Блок-контейнер контента -->
+					<div class="container__content">
+						<div class="text4">Продажа расходных материалов для принтеров и копировальной техники</div>
+						<img src="1.jpg" width="300" height="200" class="img1">
+					</div>
+					<div class="container__content">
+						<div class="text5">Заправка картриджей</div>
+						<img src="2.jpg" width="300" height="200" class="img2">
+					</div>
+					<div class="container__content">
+						<div class="text6">Ремонт и техническое обслуживание копировальной техники</div>
+						<img src="3.jpg" width="300" height="200" class="img3">
+					</div>
+				</div>
+			</div>
+</main>
+</body>
+</html>

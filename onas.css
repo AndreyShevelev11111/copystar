@@ -1,0 +1,165 @@
+nav {
+	width: 100%;
+	height: 150px;
+	background: #FFFFFF;
+	border: 20px solid #006400;
+    padding: 10px;
+}
+
+
+
+nav > .container > .container__row > .container__content {
+	justify-self: left;
+	display: flex;
+	margin-top: -20px;
+}
+
+nav > .container > .container__row > .container__content:nth-child(2) {
+	justify-self: right;
+}
+
+.logo {
+
+	color: #000000;
+	font-size: 32px;
+	text-transform: uppercase;
+	
+	margin-left: 200px;
+	margin-top: 20px;
+}
+
+
+
+
+
+nav > .container > .container__row > .container__content > ul {
+	display: flex;
+	line-height: 100px;
+	list-style: none;
+}
+
+nav > .container > .container__row > .container__content > ul > li > a {
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 38px 26px;
+	white-space: nowrap;
+	font-weight: bold;
+	line-height: -50px;
+}
+
+
+	
+	.closing-button1{
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top: -200px;
+  color: #000000;
+  font-size: 8px;
+  box-shadow: 0 0 0 2px #000000;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  overflow: hidden;
+}
+.closing-button1 span {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  z-index: 5;
+}
+.closing-button2{
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  color: #000000;
+  font-size: 8px;
+  box-shadow: 0 0 0 2px #000000;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  overflow: hidden;
+}
+.closing-button2 span {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  z-index: 5;
+}
+
+
+}
+.img{
+	margin-top: -150px;
+}
+
+.line
+{
+	width: 100%;
+	height: 20px;
+	background: #ffff;
+}
+
+.text1{
+	margin-left: 1000px;
+	color: white;
+}
+
+.b1{
+	margin-top: 10px;
+	display: block;
+}
+
+@media screen and (max-width: 1000px) {
+	.nav-toggle {
+		display: block;
+	}
+
+	.navigation {
+		display: block;
+		width: 236px;
+		max-height: 0;
+		background: #222;
+		float: none;
+		position: absolute;
+		overflow: hidden;
+		top: 100px;
+		right: 0;
+		left: 12px;
+		padding: 0;
+		z-index: 3;
+		margin: 0 0 0 calc(100% - 260px);
+	}
+}
+body{
+	background-color: #006400;
+}
+
+@media screen and (max-width: 710px) {
+	.slogan {
+		display: none;
+	}
+}
+main{
+	background-color: #006400;
+	height: 1000px;
+}
+.text1{
+	margin-left: 300px;
+	margin-top: 20px;
+}
+.text2{
+	margin-left: 200px;
+	margin-right: 300px;
+	margin-top: 20px;
+	color: white;
+}
+.text3{
+	margin-top: 60px;
+	color: white;
+}

@@ -1,0 +1,36 @@
+@font-face {
+ font-family: "Rubik";
+ src: url("../fonts/Rubik/Rubik-VariableFont_wght.ttf") format("truetype");
+}
+
+/* РЎР±СЂРѕСЃ Р±СЂР°СѓР·РµСЂРЅС‹С… РЅР°СЃС‚СЂРѕРµРє */
+* {
+ margin: 0px;
+ padding: 0px;
+}
+
+body {
+ font-family: "Rubik";
+ background: #ddd;
+}
+
+/* РџСЂР°РІРёР»Р° СЃС‚СЂСѓРєС‚СѓСЂС‹ Р±Р»РѕРєР°-РєРѕРЅС‚РµР№РЅРµСЂР° СЃС‚СЂР°РЅРёС†С‹ */
+.page {
+ display: grid;
+ grid-template-rows: repeat(4, minmax(min-content,max-content));
+}
+
+/* РџСЂР°РІРёР»Р° РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ Р±Р»РѕРєР°-РєРѕРЅС‚РµР№РЅРµСЂР° С„РёР·РёРєРё */
+:is(nav,header,main,footer) > :is(.container) {
+ padding: 20px;
+ display: grid;
+ grid-template-rows: repeat(auto-fill, minmax(0px, max-content));
+ grid-gap: 20px;
+}
+
+/* РџСЂР°РІРёР»Р° РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ Р±Р»РѕРєР°-РєРѕРЅС‚РµР№РЅРµСЂР° Р»РѕРіРёРєРё */
+:is(nav,header,main,footer) > :is(.container) > :is(.container__row) {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+ grid-gap: 20px;
+}
